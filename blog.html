@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="blog.css">
+
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Script File Bootstrap 4 -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- slick-carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@100;200;400;500;600&family=Roboto:wght@100;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://datalumin.com/wp-content/cache/minify/e805c.css" media="all" />
+    <title>Blog – DataLumin</title>
+</head>
+<style id='wst-main-style-inline-css' type='text/css'>
+    body {
+        font-family: Open Sans, sans-serif;
+        font-size: 16px;
+        line-height: 28px;
+        background-color: #ffffff
+    }
+
+    a {
+        color: #fd8200
+    }
+
+    .wst-grid-particles .wst-grid-line:after,
+    .wst-grid-particles .wst-grid-line:last-child:before {
+        background-color: #f2f2f2
+    }
+
+    .wst-grid-particles .wst-enlax:after {
+        background-color: #dbdbdb
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .wpb-js-composer .vc_tta.vc_tta-tabs .vc_tta-tab>a,
+    .slbar .widget_nav_menu .menu>li>a,
+    .wst_logo a i.logo-txt,
+    .nl-left-txt h4,
+    .counter-number,
+    .count_befAf {
+        font-family: Poppins, sans-serif;
+        font-weight: 700
+    }
+
+    .top-head .wst-main-nav ul ul {
+        min-width: 220px
+    }
+
+    .top-head .wst-main-nav>ul>li>a,
+    .side-head .wst-main-nav>ul>li>a {
+        font-size: 17px;
+        font-weight: bold;
+        text-transform: none
+    }
+
+    .top-head .wst-main-nav ul ul a,
+    .side-head .wst-main-nav ul ul a {
+        font-size: 15px;
+        text-transform: none
+    }
+
+    .top-head:not(.sticky-head) .wst-main-nav>ul>li>a,
+    .top-head:not(.sticky-head) .menu-message {
+        color: #fd8200
+    }
+
+    .top-head:not(.sticky-head) .wst-main-nav>ul>li:hover>a,
+    .top-head:not(.sticky-head) .wst-main-nav>ul>li.current-menu-parent>a,
+    .top-head:not(.sticky-head) .wst-main-nav>ul>li.current-menu-ancestor>a,
+    .top-head:not(.sticky-head).wst-main-nav>ul>li>a.active,
+    .top-head:not(.sticky-head) .wst-main-nav>ul>li.current-menu-item>a,
+    .top-head:not(.sticky-head) .wst-main-nav:not(.links_line)>ul>li:hover>a>span {
+        color: #fd8200 !important
+    }
+
+    .top-head:not(.sticky-head) .wst-main-nav.links_line>ul>li>a span::before {
+        background-color: #fd8200
+    }
+
+    .top-head:not(.sticky-head) .head-btn>a.open_search {
+        color: #ffffff
+    }
+
+    .top-head:not(.sticky-head) .head-btn>a.open_search:after {
+        background-color: rgba(255, 255, 255, 0);
+        border-color: rgba(255, 255, 255, 0.12) !important
+    }
+
+    .top-head:not(.sticky-head) .head-btn>a.cart-btn {
+        color: #ffffff
+    }
+
+    .top-head:not(.sticky-head) .head-btn>a.cart-btn:after {
+        background-color: #ef2674
+    }
+
+    .top-head:not(.sticky-head) .head-btn>a.slbar_btn:after {
+        background-color: rgba(255, 255, 255, 0);
+        border-color: rgba(255, 255, 255, 0.12) !important
+    }
+
+    .top-head.sticky-head a,
+    .top-head.sticky-head .wst-main-nav>ul>li:not(.current-menu-ancestor)>a {
+        color: #fd8200
+    }
+
+    .top-head.sticky-head a.slbar_btn span i,
+    .side-head a.slbar_btn span i {
+        background-color: #fd8200 !important
+    }
+
+    .top-head.sticky-head .wst-main-nav.links_line>ul>li>a span span:before {
+        color: #fd8200
+    }
+
+    .page-loader {
+        background-color: #f20c53
+    }
+
+    .page-title .slurve-svg {
+        fill: url(#pgt_grad)
+    }
+
+    .page-title .title_bg {
+        background-image: url('https://datalumin.com/wp-content/uploads/2019/05/title_bg.png');
+        background-repeat: no-repeat;
+        background-size: inherit;
+        background-position: 100% 100%
+    }
+
+    .page-title h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color: #ffffff
+    }
+
+    .page-title h3 {
+        color: #ffffff;
+        font-size: 18px
+    }
+
+    .page-title .title-icon {
+        font-size: 40px
+    }
+
+    .page-title .in-page-title {
+        height: 600px
+    }
+
+    .breadcrumb a,
+    .breadcrumb,
+    .breadcrumb span {
+        color: #ffffff
+    }
+
+    .breadcrumb {
+        background-color: rgba(0, 0, 0, 0.14)
+    }
+
+    .wst-footer .foot-top {
+        background-color: #fff;
+        border: 1px solid #c6c6c6
+    }
+
+    .wst-footer .footer-middle,
+    .wst-footer .footer-middle a,
+    .wst-footer .footer-middle .search-form .btn {
+        color: #ffffff !important
+    }
+
+    .footer-middle input[type='text'],
+    .footer-middle input[type='search'],
+    .footer-middle input[type='number'],
+    .footer-middle select,
+    .footer-middle .tagcloud a,
+    .footer-middle td {
+        border-color: rgba(255, 255, 255, 0.25) !important
+    }
+
+    .wst-footer .footer-middle a,
+    .wst-footer .footer-middle a:hover {
+        color: #ffffff !important
+    }
+
+    .wst-footer .footer-middle .widget li a:after {
+        background-color: #ffffff !important
+    }
+
+    .wst-footer .footer-middle .widget h2.widgettitle {
+        color: #ffffff
+    }
+
+
+
+    .wst-footer .footer_bg:before {
+        background-image: url('https://datalumin.com/wp-content/uploads/2019/05/foot_bg-1.png');
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+        background-size: inherit
+    }
+
+    .wst-footer .footer-bottom {
+        color: #848484
+    }
+
+    .footer-bottom input[type='text'],
+    .footer-bottom input[type='search'],
+    .footer-bottom input[type='number'],
+    .footer-bottom select,
+    .footer-bottom .tagcloud a,
+    .footer-bottom td {
+        border-color: rgba(132, 132, 132, 0.25) !important
+    }
+
+    .wst-footer .footer-bottom a,
+    .wst-footer .footer-bottom .search-form .btn {
+        color: #ffffff !important
+    }
+
+    .wst-footer .footer-bottom a:after {
+        background-color: #ffffff !important
+    }
+
+    .sl_bar_content {
+        padding-top: 80px;
+        padding-bottom: 80px
+    }
+
+    .sl_bar_content {
+        font-size: 16px;
+        color: #ffffff
+    }
+
+    .sl_bar_content a,
+    .sl_bar_content a:hover,
+    .slbar .widget_nav_menu .menu>li>a:before,
+    .sl_bar_content .widget_nav_menu ul li.current-menu-ancestor>a,
+    .sl_bar_content .widget_nav_menu ul li.current-menu-item>a {
+        color: #ffffff
+    }
+
+    .slbar .widget_nav_menu .menu>li>a:after {
+        background-color: #ffffff
+    }
+
+    .sl_bar_content h2 {
+        font-size: 14px !important;
+        color: #ffffff !important
+    }
+
+    @media only screen and (max-width:768px) {
+        header.top-head .logo a i.logo-txt {
+            font-size: 25px
+        }
+    }
+
+    @media (max-width:992px) {
+        header.top-head.sticky-head {
+            position: absolute
+        }
+    }
+
+    @media (max-width:992px) {
+        .top-bar {
+            display: none
+        }
+    }
+
+    .main-bg,
+    .form-submit input.submit,
+    ul.page-numbers li.current:before,
+    .tagcloud a:hover,
+    .cp-text.loading-bar .cd-words-wrapper::after,
+    .post-tags a:hover:after,
+    #pp-nav li .active span,
+    .pp-slidesNav .active span,
+    .sidebar .mc4wp-form input[type='submit'],
+    .vc_progress_bar .vc_single_bar .vc_bar,
+    .cp-img-compare-handle i,
+    .comment-list li article .reply a,
+    .sub-pager>span:not(.page-links-title):before,
+    ul.page-numbers li.current span:before,
+    .wst-main-nav.colored li.mega-menu .mega-content,
+    .page-loader .line_with_Dots .circlesload i,
+    .page-loader .large_dots:before,
+    .page-loader .large_dots:after,
+    .page-loader .large_dots>div:before,
+    #to-top:before,
+    #to-top:after,
+    .page-loader .circles .circlesload:after,
+    thead th,
+    .page-loader .cp-balls:after,
+    .page-loader .spin_Square,
+    .page-loader .cp-bubble:before,
+    .page-loader .cp-bubble:after,
+    .page-loader .cp-bubble,
+    .wst-single-tags a:hover,
+    .page-loader .cp-eclipse,
+    .page-loader .circles .circlesload:before,
+    .page-loader .large_dots>div:after,
+    #raysgrid_related.raysgrid.kara .portfolio-item:hover .port-captions:after,
+    .filter-by.style1 li.selected a,
+    .wpb-js-composer .vc_tta.vc_general.vc_tta-style-classic .vc_tta-tab.vc_active>a,
+    .wpb-js-composer .vc_tta.vc_tta-tabs.vc_tta-style-with_shadow .vc_tta-tab.vc_active>a,
+    .wst-heading.main:before,
+    .vc_toggle_title:after,
+    .vc_grid-filter-item.vc_active>span,
+    .vc_gitem-post-data-source-post_title h4:after,
+    .social-list a i:last-child,
+    .jssocials-share:hover {
+        background-color: #757575;
+        color: #fff
+    }
+
+    .wst-main-nav.colored ul ul,
+    .wpb-js-composer .vc_tta-tabs.vc_tta-style-classic:not(.vc_tta-o-no-fill) .vc_tta-panel.vc_active .vc_tta-panel-body,
+    .main-bg-import {
+        background-color: #757575 !important
+    }
+
+    a:hover,
+    .main-color,
+    .main-color>a,
+    .top-head nav>ul>li>a>span::before,
+    .breadcrumb a,
+    .price_label span,
+    ul.post-meta li:after,
+    .bottom-head.bot-menu-bg .wst-main-nav>ul>li:hover>a,
+    .wst-blog-single .post-categories li a,
+    .vc_toggle_active .vc_toggle_title,
+    .meta .comment-reply-link,
+    .meta .comment-edit-link,
+    .widget_nav_menu ul li.current-menu-ancestor>a,
+    .widget_nav_menu ul li.current-menu-item>a,
+    .search-wrapper .search-form .btn,
+    .widget_nav_menu ul li.current-menu-parent>a,
+    .widget_nav_menu ul li.current-menu-ancestor li.current-menu-item.current_page_item>a,
+    .wst-main-nav ul li li a:hover,
+    .HotspotPlugin_Hotspot .Hotspot_Title,
+    .widget_nav_menu ul li.current-menu-parent li.current-menu-item.current_page_item>a,
+    .top-bar-menu ul.sub-menu li:hover>a>span,
+    .top-head .wst-main-nav:not(.links_line)>ul>li:hover>a>span,
+    .nav-single>div .meta-nav i,
+    .wpb-js-composer .vc_tta.vc_general.vc_tta-style-creative .vc_tta-tab.vc_active>a,
+    .vc_toggle .vc_toggle_icon:after,
+    .vc_progress_bar.prog1 .vc_label_units,
+    .wst_logout a,
+    .wst-heading.style2:before,
+    .wst-heading.style2:after {
+        color: #757575
+    }
+
+    .wst-more-btn:hover:after,
+    .wst-more-btn:hover:before,
+    .post-tags a:hover:before,
+    .wst-main-nav li:not(.mega-menu) ul,
+    .wst-main-nav li.mega-menu .mega-content,
+    .wst-border-form .wpcf7-form-control.wpcf7-text:focus,
+    .wst-border-form .wpcf7-form-control.wpcf7-textarea:focus,
+    .sidebar .widget h2.widgettitle,
+    .slbar .widget h2.widgettitle,
+    .wpb_widgetised_column .widget h2.widgettitle {
+        border-color: #757575
+    }
+
+    .vc_gitem_row .vc_btn3-container .vc_btn3:before,
+    .vc_gitem_row .vc_btn3-container .vc_btn3:after {
+        border-color: #757575 !important
+    }
+
+    .page-loader .cp-round:after {
+        border-top-color: #757575
+    }
+
+    .page-loader .cp-eclipse:before {
+        border-right-color: #757575
+    }
+
+    .page-loader .cp-eclipse:after {
+        border-left-color: #757575
+    }
+
+    .wst-main-nav.custom ul ul,
+    .wst-main-nav.custom li.mega-menu .mega-content {
+        background-color: #fd8200 !important
+    }
+
+    .wst-main-nav.custom ul ul li a {
+        color: #fff !important
+    }
+
+    .wst-main-nav.custom>ul>li:not(.mega-menu) ul li.hasChildren:before,
+    .wst-main-nav.custom>ul>li:not(.mega-menu) ul li.hasChildren:after,
+    .side-head .wst-main-nav.custom>ul>li ul li.hasChildren:before,
+    .side-head .wst-main-nav.custom>ul>li ul li.hasChildren:after {
+        background-color: #fff
+    }
+</style>
+
+<style>
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: gray;
+        color: #333;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    #myBtn:hover {
+        background-color: #555;
+    }
+
+    ::before {
+        color: #fd8200;
+    }
+</style>
+
+
+    <body class="blog wpb-js-composer js-comp-ver-6.0.5 vc_responsive">
+        <header class="header">
+            <div class="container">
+                <div class="header-main">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./assets/Datalumin-Logo.png" alt=""></a>
+                    </div>
+                    <div class="open-nav-menu">
+                        <span></span>
+                    </div>
+                    <div class="menu-overlay">
+                    </div>
+                    <!-- navigation menu start -->
+                    <nav class="nav-menu">
+                        <div class="close-nav-menu">
+                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                        </div>
+                        <ul class="menu">
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#" data-toggle="sub-menu">Services <i class="plus"></i></a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="./advisory.html"> Advisory Services</a></li>
+                                    <li class="menu-item"><a href="./data.html"> Data Engineering</a></li>
+                                    <li class="menu-item"><a href="./science.html"> Data Science</a></li>
+                                    <li class="menu-item"><a href="./insight.html"> Insight Science</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#" data-toggle="sub-menu">Verticals <i class="plus"></i></a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="./banking.html">Banking & Financial
+                                            Services</a></li>
+                                    <li class="menu-item"><a href="./manufacture.html">Manufacturing</a></li>
+                                    <li class="menu-item"><a href="./retail.html">Retail</a></li>
+                                </ul>
+                            </li>
+    
+                            <li class="menu-item">
+                                <a href="./blog.html">Blog</a>
+                            </li>
+    
+                            <li class="menu-item">
+                                <a href="./resources.html">Resources</a>
+                            </li>
+    
+                            <li class="menu-item">
+                                <a href="./contact.html">Get In Touch</a>
+                            </li>
+    
+                        </ul>
+                    </nav>
+                    <!-- navigation menu end -->
+                </div>
+            </div>
+        </header>
+        <div class="pageWrapper ">
+            <div class="wst-page-content">
+                <div class="container">
+
+                    <div class="row flxrow lft-cell">
+
+                        <div class="wst-main-content wst-content-column">
+
+
+                            <div id="wst_blog_content" class="blog-posts lg-image">
+                                <article id="post-257"
+                                    class="post-item post-257 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-analytics category-world tag-analytics tag-coronavirus tag-covid-19 tag-data tag-geospatial">
+                                    <div class="inner-post-item">
+                                        <span class="post-sticky" title="Featured"><i class="stline-pin"></i></span>
+                                        <div class="post-image"><a href="" class="post-thumbnail"><img width="300"
+                                                    height="200"
+                                                    src="https://datalumin.com/wp-content/uploads/2020/04/COVID-19-300x200.jpg"
+                                                    class="attachment-medium size-medium wp-post-image" alt=""
+                                                    loading="lazy"
+                                                    srcset="https://datalumin.com/wp-content/uploads/2020/04/COVID-19-300x200.jpg 300w, https://datalumin.com/wp-content/uploads/2020/04/COVID-19-1024x681.jpg 1024w, https://datalumin.com/wp-content/uploads/2020/04/COVID-19-768x511.jpg 768w, https://datalumin.com/wp-content/uploads/2020/04/COVID-19-1536x1022.jpg 1536w, https://datalumin.com/wp-content/uploads/2020/04/COVID-19.jpg 1920w"
+                                                    sizes="(max-width: 300px) 100vw, 300px" /></a></div>
+                                        <div class="post-info">
+
+                                            <h3 class="wst-post-title"><a href="" rel="bookmark">Saving Lives in the
+                                                    times of Wuhan COVID-19 &#8211;
+                                                    One chart at a time</a></h3>
+                                            <ul class="post-meta">
+                                                <li class="wst-meta-author"><img alt=''
+                                                        src='https://secure.gravatar.com/avatar/eff498669218b7027d92f5ab805fc503?s=32&#038;d=mm&#038;r=g'
+                                                        srcset="https://secure.gravatar.com/avatar/eff498669218b7027d92f5ab805fc503?s=64&#038;d=mm&#038;r=g 2x"
+                                                        class='avatar avatar-32 photo' height='32' width='32'
+                                                        loading='lazy' /><span>By: </span><a class="main-color" href=""
+                                                        rel="author">admin</a></li>
+                                                <li class="meta-cat"><i class="stline-folder-bookmark"></i><a
+                                                        class="main-color" href="">Analytics</a>
+                                                </li>
+                                                <li class="meta-comments"><i
+                                                        class="stline-messages-bubble-text-1"></i><a href=""><span
+                                                            class="main-color">0 </span>Comments</a></li>
+                                                <li><span class="hidden lk">Like</span><span
+                                                        class="hidden unlk">Unlike</span><a href="#"
+                                                        class="jm-post-like" data-post_id="257" title="Like"><i
+                                                            class="fa fa-heart main-color"
+                                                            data-hover="\f08a"></i><span>Like</span></a></li>
+                                            </ul>
+                                            <div class="entry-content">Tracking and making sense of the Virus spread is
+                                                no mean job. Particularly when there is not much known about it. We can
+                                                build all the fancy models we want, but they won’t work as expected
+                                                because &#8211; not much is known, there is no data set that will train
+                                                <div class="wst-more-wrap"><a class="wst-more-btn" href=""><span>Read
+                                                            More</span></a></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Footer -->
+                            
+
+
+    </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a id="to-top" href="#" class="main-bg rounded"><span><i class="fa-sharp fa-solid fa-arrow-up"></i><i
+                        class="stline-arrow-up btn_back"></i></span></a>
+        </div>
+        <div class="wst_overlay main-bg"></div>
+        <div class="slbar columns-2">
+            <a href="#" class="slbar_close stline-close"></a>
+            <div class="sl_bar_content container">
+                <div class="sliding-bar-color widget widget_nav_menu">
+                    <div class="menu-datalumin-menu-container">
+                        <ul id="menu-datalumin-menu" class="menu">
+                            <li id="menu-item-13525"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13525">
+                                <a href="#">Services</a>
+                                <ul class="sub-menu">
+                                    <li id="menu-item-13699"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13699">
+                                        <a href="./advisory.html">Advisory Services</a>
+                                    </li>
+                                    <li id="menu-item-13734"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13734">
+                                        <a href="./data.css">Data Engineering</a>
+                                    </li>
+                                    <li id="menu-item-13733"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13733">
+                                        <a href="./science.html">Data Science</a>
+                                    </li>
+                                    <li id="menu-item-13732"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13732">
+                                        <a href="./insight.html">Insight Science</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-13526"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13526">
+                                <a href="#">Verticals</a>
+                                <ul class="sub-menu">
+                                    <li id="menu-item-13610"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13610">
+                                        <a href="./banking.html">Banking &#038;
+                                            Financial Services</a>
+                                    </li>
+                                    <li id="menu-item-13609"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13609">
+                                        <a href="./manufacture.html">Manufacturing</a>
+                                    </li>
+                                    <li id="menu-item-13608"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13608">
+                                        <a href="./retail.html">Retail</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-14116"
+                                class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-119 current_page_item  menu-item-14116">
+                                <a href="./blog.html" aria-current="page">Blog</a>
+                            </li>
+                            <li id="menu-item-14235"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14235"><a
+                                    href="./resources.html">Resources</a></li>
+                            <li id="menu-item-13615"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13615"><a
+                                    href="./contact.html">Get In Touch</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="widget widget_media_image"><img width="250" height="100"
+                        src="https://datalumin.com/wp-content/uploads/2020/02/Datalumin-Logo-250.png"
+                        class="image wp-image-13898  attachment-full size-full" alt="" loading="lazy"
+                        style="max-width: 100%; height: auto;" /></div>
+                <div class="sliding-bar-color widget widget_wst_widget_social_icons">
+                    <p class="foot-about-par">DataLumin is a team that worked in world-class Consulting &amp; Data
+                        Product organizations coming together to provide customers with the best possible data
+                        experience.</p>
+                    <div class="social-list"><a href='https://www.linkedin.com/company/datalumin' target="_blank"><i
+                                class='stline-professional-network-linkedin'></i><i
+                                class='stline-professional-network-linkedin'></i></a></div>
+                </div>
+            </div>
+            <svg class="wst-slbar-over" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="slbar-grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#7a86ff" />
+                        <stop offset="100%" stop-color="#ff4780" />
+                    </linearGradient>
+                    <linearGradient id="slbar-grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#162bff" />
+                        <stop offset="100%" stop-color="#f20c53" />
+                    </linearGradient>
+                    <linearGradient id="slbar-grad3" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#ffffff" />
+                        <stop offset="100%" stop-color="#fd8200" />
+                    </linearGradient>
+                </defs>
+                <path class="wst-slbar-over-path" d=""></path>
+                <path class="wst-slbar-over-path" d=""></path>
+                <path class="wst-slbar-over-path" d=""></path>
+            </svg>
+        </div>
+        <div class="md-overlay"></div>
+
+
+        <script src="https://datalumin.com/wp-content/cache/minify/f76b2.js"></script>
+
+        <script type='text/javascript' id='jm_like_post-js-extra'>
+            /* <![CDATA[ */
+            var ajax_var = { "url": "https:\/\/datalumin.com\/wp-admin\/admin-ajax.php", "nonce": "b880fd2540" };
+/* ]]> */
+        </script>
+
+
+
+
+
+
+
+
+
+        <script src="https://datalumin.com/wp-content/cache/minify/118e5.js"></script>
+        <script src="./index.js"></script>
+
+    </body>
+
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using disk: enhanced 
+Content Delivery Network via N/A
+Minified using disk
+
+Served from: datalumin.com @ 2021-02-08 23:08:16 by W3 Total Cache
+-->

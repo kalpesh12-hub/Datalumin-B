@@ -1,0 +1,24 @@
+<a href="" style="
+                        border: 1px solid #fd8200;
+                        padding: 12px;
+                        text-decoration: none;
+                      "><span style="color: #fd8200">Know More</span></a>
+
+
+
+                                  <div class="container">
+                <div class="grid grid-cols-1 md-grid-cols-2 lg:grid-cols-2 gap-2">
+                    <div class="slider-text-wrapper">
+                        <h1>Delivering</h1>
+                        <p>World class Visual Analytics at scale</p>
+                        <a href="" style="
+                        border: 1px solid #fd8200;
+                        padding: 12px;
+                        text-decoration: none;
+                      "><span style="color: #fd8200">Know More</span></a>
+                    </div>
+                    <div class="image-container">
+                        <img src="./assets/Delivering-World.png" alt="" srcset="" class="slider-image" />
+                    </div>
+                </div>
+            </div>

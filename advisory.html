@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="advisory.css" />
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap 5 -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script> -->
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <!-- Script File Bootstrap 4 -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <!-- slick-carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@100;200;400;500;600&family=Roboto:wght@100;400;500;700;900&display=swap"
+    rel="stylesheet" />
+
+  <title>Advisory Services – DataLumin</title>
+</head>
+<style>
+  #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: gray;
+      color: #333;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+  }
+
+  #myBtn:hover {
+      background-color: #555;
+  }
+
+  ::before {
+      color: #fd8200;
+  }
+</style>
+<style>
+  p.widget-txt {
+  width: 300px;
+  padding: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.widget_text.widget.widget_custom_html {
+  padding: 20px;
+}
+
+</style>
+
+
+
+<body>
+  <header class="header">
+    <div class="container-1">
+      <div class="header-main">
+        <div class="logo">
+          <a href="./index.html"><img src="./assets/Datalumin-Logo.png" alt="" /></a>
+        </div>
+        <div class="open-nav-menu">
+          <span></span>
+        </div>
+        <div class="menu-overlay"></div>
+        <!-- navigation menu start -->
+        <nav class="nav-menu">
+          <div class="close-nav-menu">
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+          </div>
+          <ul class="menu">
+            <li class="menu-item menu-item-has-children">
+              <a href="#" data-toggle="sub-menu">Services <i class="plus"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="./advisory.html"> Advisory Services</a>
+                </li>
+                <li class="menu-item">
+                  <a href="./data.html"> Data Engineering</a>
+                </li>
+                <li class="menu-item">
+                  <a href="./science.html"> Data Science</a>
+                </li>
+                <li class="menu-item">
+                  <a href="./insight.html"> Insight Science</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a href="#" data-toggle="sub-menu">Verticals <i class="plus"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="./banking.html">Banking & Financial Services</a>
+                </li>
+                <li class="menu-item">
+                  <a href="./manufacture.html">Manufacturing</a>
+                </li>
+                <li class="menu-item"><a href="./retail.html">Retail</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="./blog.html">Blog</a>
+            </li>
+
+            <li class="menu-item">
+              <a href="./resources.html">Resources</a>
+            </li>
+
+            <li class="menu-item">
+              <a href="./contact.html">Get In Touch</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navigation menu end -->
+      </div>
+    </div>
+  </header>
+
+
+  <div class="wrapper-container">
+    <div class="wrapper">
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><a id="to-top" href="#"
+          class="main-bg rounded active"><span style="color: aliceblue;"><i class="fa-sharp fa-solid fa-arrow-up"></i><i
+              class="stline-arrow-up btn_back"></i></span></a></button>
+      <div class="container">
+        <div class="grid grid-cols-1 md-grid-cols-2 lg:grid-cols-2 gap-2">
+          <div class="slider-text-wrapper">
+            <h3 class="text-head-1">
+              <span>Analytics Design</span><br /><span style="color: #fd8200">Blueprint</span>
+            </h3>
+            <div class="text-wrapper">
+              <p>
+                What would be your long-term plan for getting the right Return
+                on Investment by deploying analytics across your organization?
+                How would you design the map and define the Step 1 to Step N
+                to get you to your objectives? A part of our Core Advisory
+                Services is designing the BluePrint for your Analytics
+                journey. Coming from the deep-seated experience of our team
+                who have spent many years working with Global Consulting and
+                Product Organizations, you are assured of the right plan for
+                your Organization.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="./assets/Analytics-Design.jpg" alt="" srcset="" class="slider-image" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="grid grid-cols-1 md-grid-cols-2 lg:grid-cols-2 gap-2" style="grid-gap: 50px;">
+          <div class="image-container">
+            <img src="./assets/Deployment-Framework.jpg" alt="" srcset="" class="slider-image" />
+          </div>
+          <div class="slider-text-wrapper">
+            <h3 class="text-head-1">
+              <span>Deployment Framework</span><br /><span style="color: #fd8200">Build</span>
+            </h3>
+            <div class="text-wrapper">
+              <p>
+                With an eye for detail, DataLumin will define the optimal
+                deployment and data strategies to meet your organizational
+                needs. This will have full detail around the deployment
+                strategy, roll-out activity plan, change management framework
+                and a bonus document of a high-level adoption strategy
+                document customized for your roll-out.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="grid grid-cols-1 md-grid-cols-2 lg:grid-cols-2 gap-2">
+          <div class="slider-text-wrapper">
+            <h3 class="text-head-1">
+              <span>Adoption</span><br /><span style="color: #fd8200">Workshops</span>
+            </h3>
+            <div class="text-wrapper">
+              <p>
+                Post the right strategy and implementation is how people who the Analytics solutions are deployed for
+                use them and derive maximum value. Adoption workshops are designed very creatively to ensure this
+                happens. This will include the design and execution of a carefully crafted plan with specific outcomes
+                designed to increase the usage and value extraction.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="./assets/Adoption-Workshops.jpg" alt="" srcset="" class="slider-image" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="grid grid-cols-1 md-grid-cols-2 lg:grid-cols-2 gap-2" style="grid-gap: 50px;">
+          <div class="image-container">
+            <img src="./assets/Industry-Specific.jpg" alt="" srcset="" class="slider-image" />
+          </div>
+          <div class="slider-text-wrapper">
+            <h3 class="text-head-1">
+              <span>Industry Specific</span><br /><span style="color: #fd8200">Solution </span><span>Design</span>
+            </h3>
+            <div class="text-wrapper">
+              <p>
+                Every Industry is different from the other in deployment of Analytics solutions, however there can be
+                good practices that can be adopted from within the industry segment and cross-industry. Whether it is
+                identifying the right metrics that are critical to measure performances of individual functions or
+                leveraging the expertise of a well-tuned business process execution that can improve the ROI – DataLumin
+                will bring you the right Industry expertise and deliver a recommendation document that can be an
+                integral part of the Analytics Design BluePrint
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="grid grid-cols-1 md-grid-cols-2 lg:grid-cols-2 gap-2">
+          <div class="slider-text-wrapper">
+            <h3 class="text-head-1">
+              <span>Center of Excellence </span><br /><span style="color: #fd8200">Design Services</span>
+            </h3>
+            <div class="text-wrapper">
+              <p>
+                Developing a strategy to scale your analytics footprint within the organization while minimising risk is
+                a delicate task. Particularly when the users of the solution are spread across multiple geographies,
+                building a Center of Excellence that can build and deploy while retaining the self-service autonomy that
+                users want is critical. DataLumin will help you build that balance and work with your Analyst, Business
+                User and IT teams to organize governance recommendations and deliver a Center of Excellence Strategy
+                document. Using this, you can deploy the analytics solutions at scale with confidence.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="./assets/Center-of-Excellence.jpg" alt="" srcset="" class="slider-image" />
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+  <!-- Contact Us Page -->
+  <div class="resource-wrapper">
+    <div class="resource-header" style="margin: 20px"></div>
+    <h2 class="text-head">
+      Feel Free To
+      <span style="color: #fd8200; font-family: Poppins, sans-serif">Contact Us</span>
+    </h2>
+  </div>
+
+  <div class="container" style="height: max-content;">
+    <div class="grid grid-cols-1 md-grid-cols-2 lg:grid-cols-2 gap-4 data" style="grid-gap: 50px">
+      <div class="slider-text-wrapper">
+        <div class="image-wrapper" style="height: 25%;"></div>
+        <img src="./assets/Contact-Us-1536x384.jpg" alt="" srcset="" style="vertical-align: middle; margin-top: auto" />
+      </div>
+      <div class="slider-text-wrapper">
+        <p class="paragraph">
+          Drop in a short note to us and we would love to get in touch and
+          take you on the best data experience ever!
+        </p>
+
+        <form action="https://formsubmit.co/7213d0e416e8f537e00a53e9fb2a27bf" method="POST">
+          <label for="uname" class="label">Name <sup style="color: red">*</sup></label><br />
+
+          <input type="text" name="Name" id="uname" class="field" required /><br />
+
+          <label for="email" class="label">Email <sup style="color: red">*</sup></label><br />
+          
+          <input type="email" name="Email" id="email" class="field" required /><br />
+          <label for="cname" class="label">Company Name</label><br />
+          <input type="text" name="Comp-Name" id="cname" class="field"><br />
+          <label for="query" class="label">Query <sup style="color: red">*</sup></label><br />
+          <textarea name="Message" class="field-area" required></textarea>
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanku.html">
+          <button type="submit" id="btn">Submit</button>
+      </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  
+    <!-- Footer -->
+    <footer class="wst-footer footer-2">
+
+
+      <div class="footer_bg">
+          <div class="footer-middle">
+              <div class="container">
+                  <div class="row row-eq-height columns-3">
+                      <div class="widget widget_wst_widget_image_text">
+                          <div class="foot-image"><img alt="" src="./assets/Datalumin-Logo.png"></div>
+                          <p class="widget-txt" style="    color: grey!important;
+                          ">DataLumin is a team that worked in world-class Consulting &amp; Data
+                              Product organizations coming together to provide customers with the best possible data
+                              experience.</p>
+                      </div>
+                      <div class="widget_text widget widget_custom_html">
+                          <h2 class="widgettitle">Locations</h2>
+                          <div class="textwidget custom-html-widget">
+                              <p style="color:black;">
+                                  <b>India</b><br>
+                                  18th Floor, Cyber One,
+                                  Sector 30, Vashi, Navi Mumbai,
+                                  Maharashtra 400703
+                              </p><br>
+
+                              <p style="color:black;">
+                                  <b>Singapore</b><br>
+                                  380 Jalan Besar
+                                  Singapore 209000
+                              </p>
+                          </div>
+                      </div>
+                      <div class="sliding-bar-color widget widget_wst_widget_social_icons" style="padding: 10px;">
+                          <h2 class="widgettitle">Social Network</h2>
+                          <div class="social-list"><a href="https://www.linkedin.com/company/datalumin" target="_blank"><i class="fa fa-linkedin-square" style="font-size:48px;color:#fd8200"></i></a></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="footer-bottom">
+              <div class="container">
+                  <div class="row row-eq-height columns-2">
+
+                      <div class="copyrights text-center" style="text-align: center;">
+                          All rights reserved © 2023 | Datalumin </div>
+
+
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
+  </footer>
+
+
+
+
+  <script src="index.js"></script>
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+</body>
+
+
+
+</html>
